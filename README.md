@@ -1,20 +1,20 @@
 **Frontend:**: React + TailwindCSS
 **Backend:** Node.js + Express
-**Database:** MongoDB
+**Database:** MySQL
 
-**Live Link:** https://admin-panel-2-x24h.onrender.com/leads
-**BackEnd Link:** https://server-2-wlpk.onrender.com
+**Live Link:** https://websitelogical.vercel.app/
+
 
 
 ## Features
 
 Full Stack (Frontend + Backend)
 Admin Dashboard with status cards and lead tables
-Create and Manage Leads
+Create and Manage Movies
 Search, Filter
-API Integration (Node.js + Express + MongoDB)
+API Integration (Node.js + Express + MySQL)
 Validation for form fields before submission
-Sidebar Navigation (Dashboard & Leads)
+Sidebar Navigation (Dashboard & Movies)
 Responsive UI with TailwindCSS
 Modular Folder Structure
 
@@ -23,23 +23,26 @@ Modular Folder Structure
 frontend                          # React + Tailwind frontend
   -components                          # Reusable UI components
     Loading.jsx                            # Loader component
-    LeadModal.jsx                          # Modal to create a lead
+    MoviesModal.jsx                          # Modal to create a Movies
   -constants                    
     apiConstants.js                   # API constants 
   -hooks
-    useLead.jsx                       # Custom hook for API logic (CRUD, filters, search)
+    useMovies.jsx                       # Custom hook for API logic (CRUD, filters, search)
   -pages
-    DashboardContent.jsx               # Dashboard overview (cards + lead stats)    
-    Leads.jsx                          # Leads table + search + filter + create
+    DashboardContent.jsx               # Dashboard overview (cards + Movies stats)    
+    Movies.jsx                          # Moviess table + search + filter + create
     DashboardLayout.jsx                # Main layout (Sidebar + Content)
     SideBar.jsx                        # Sidebar navigation
+    Login.jsx                           # user login component
+    Register.jsx                        # Register login component
   -services
     api.jsx                            # Base API logic
-    leadService.jsx                    # Lead-related API service (CRUD)
+    MoviesService.jsx                    # Movies-related API service (CRUD)
   -utils
     alerts.js                           # Toaster/alert functions
     formValidator.js                    # Validation functions for frontend
-  -README.md
+ProtectedRoute.js                    # Used in App.js to restrict access to private routes unless the user is authenticated
+ PublicRoute.jsx                      # Used in App.js to prevent logged-in users from accessing public pages like Login or Register
 
 
 
