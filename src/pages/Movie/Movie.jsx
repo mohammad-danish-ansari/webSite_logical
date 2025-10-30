@@ -10,6 +10,7 @@ import { showAlert } from "../../utils/alerts";
 
 export default function Movie() {
   const {
+    resetForm,
     formData,
     createPostMovie,
     handleChange,
@@ -103,7 +104,7 @@ export default function Movie() {
       {/* Header */}
       <div className="bg-white lg:px-6 flex items-center justify-end bt_1" >
         <button
-          onClick={() => setShowMovieModal(true)}
+          onClick={() => {resetForm();setShowMovieModal(true)}}
           className="inline-flex justify-end items-center px-2 md:px-4 py-2 bg-blue-600 text-white text-sm font-medium rounded-lg hover:bg-blue-700 focus:ring-2 focus:ring-blue-500 focus:ring-offset-2"
         >
           <Plus size={16} className="md:mr-2" />
@@ -163,7 +164,7 @@ export default function Movie() {
                   >
                     <option value="">Select status</option>
                     <option value="Movie">Movie</option>
-                    <option value="TV Show">TV Show</option>
+                    <option value="TVShow">TVShow</option>
                   </select>
                 </div>
                 <button className="p-2 text-gray-400 hover:text-gray-600">

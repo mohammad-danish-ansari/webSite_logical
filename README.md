@@ -18,6 +18,26 @@ Sidebar Navigation (Dashboard & Movies)
 Responsive UI with TailwindCSS
 Modular Folder Structure
 
+
+### User Authentication
+Register new users with name, phone, email, and password.
+Login using email and password.
+Uses JWT (JSON Web Token) for authentication.
+
+### Movie Management
+Create Movie - logged-in users can add new movies with title, type, director, etc.
+Get All Movies - users can view only their own movies (filtered by user_id).
+Update Movie - users can update only their own movie entries.
+Delete Movie - users can delete only the movies they created.
+
+### Data Relations
+Each movie is linked to a user via user_id (foreign key).
+User.hasMany(Movie) and Movie.belongsTo(User) association in Sequelize.
+
+###  Database
+Uses MySQL with Sequelize ORM.
+Auto syncs tables and relations.
+
 ### folder structure ###
 
 frontend                          # React + Tailwind frontend
