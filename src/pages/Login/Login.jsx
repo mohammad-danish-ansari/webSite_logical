@@ -65,7 +65,7 @@ export default function Login() {
   return (
     <div className="flex justify-center items-center min-h-screen bg-gray-100">
       <div className="bg-white shadow-lg rounded-xl p-6 w-[350px]">
-        <h3 className="text-center text-2xl font-semibold mb-6">User Sign In</h3>
+        <h3 className="text-center text-2xl font-semibold mb-6">User LogIn</h3>
 
         <form className="space-y-4">
           {/* Email input */}
