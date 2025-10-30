@@ -4,12 +4,28 @@
 
 **Live Link:** https://websitelogical.vercel.app/
 
+# start server 
+npm  start
 
+# Initialize Git in your project
+git init  
+
+# Add your GitHub repo as remote 
+git remote add origin https://github.com/mohammad-danish-ansari/webSite_logical.git
+
+# Add all files
+git add .  
+
+# Commit changes
+git commit -m "React + Node CRUD app"  
+
+# Push to GitHub master branch
+git pull origin master 
+git push -u origin master 
 
 ## Features
 
 Full Stack (Frontend + Backend)
-Admin Dashboard with status cards and lead tables
 Create and Manage Movies
 Search, Filter
 API Integration (Node.js + Express + MySQL)
